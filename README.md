@@ -24,7 +24,57 @@ Jett turns a real brand brief into twelve coordinated 4:5 posts: original backgr
 | Review evidence | Contact sheet, technical QA report, and recorded visual-review status |
 | Clean handoff | Ready-to-upload assets plus a packaged ZIP |
 
-## Install
+## Requirements
+
+| Runtime | Used for |
+| --- | --- |
+| **Python 3.12+** | Campaign setup, manifest validation, and delivery packaging |
+| **Node.js 20+ with npm** | Typography rendering, image normalization, and QA |
+| **Codex with image generation** | Creating the twelve text-free campaign backgrounds |
+
+Check your machine first:
+
+```bash
+python --version
+python3 --version
+node --version
+npm --version
+```
+
+Only one Python command needs to work: usually `python` on Windows and `python3` on macOS/Linux.
+
+### Install Python when it is missing
+
+**Windows 10/11**
+
+```powershell
+winget install --exact --id Python.Python.3.12
+```
+
+Close and reopen the terminal, then run `python --version`. If `python` is not recognized, try `py -3 --version`.
+
+**macOS**
+
+Install the current macOS package from [python.org/downloads](https://www.python.org/downloads/), or use Homebrew:
+
+```bash
+brew install python
+```
+
+Then run `python3 --version`.
+
+**Ubuntu / Debian**
+
+```bash
+sudo apt update
+sudo apt install -y python3
+```
+
+Then run `python3 --version`. For other systems, use the official [Python downloads page](https://www.python.org/downloads/).
+
+If Node.js is missing, install a current LTS release from [nodejs.org/download](https://nodejs.org/en/download) and reopen the terminal. Full platform notes are in [references/runtime-setup.md](references/runtime-setup.md).
+
+## Install the skill
 
 Clone the repository into your Codex skills directory:
 
@@ -64,12 +114,22 @@ The visual-review status stays `UNVERIFIED` until a person or vision-capable age
 
 ## Manual workflow
 
-**Requirements:** Python 3.10+, Node.js 20+, and a Codex environment with image-generation access.
-
 Create a campaign from the bundled template:
+
+Windows:
 
 ```bash
 python scripts/init_campaign.py \
+  --dest /absolute/path/to/campaign \
+  --brand-name "Your Brand" \
+  --campaign-slug your-brand-launch \
+  --language en
+```
+
+macOS/Linux uses the same arguments with `python3`:
+
+```bash
+python3 scripts/init_campaign.py \
   --dest /absolute/path/to/campaign \
   --brand-name "Your Brand" \
   --campaign-slug your-brand-launch \

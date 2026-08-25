@@ -22,13 +22,17 @@ Build one coherent 12-post campaign without leaking identity from any other clie
 
 Read [references/intake-contract.md](references/intake-contract.md). Obtain or propose the brand name, sector, offer, target audience, campaign goal, language, colors, typography, voice, CTA, logo policy, and visual references. Mark proposed identity choices as proposed; do not silently treat them as approved brand facts.
 
+## Runtime setup
+
+Before scaffolding, read [references/runtime-setup.md](references/runtime-setup.md) and verify Python 3.12+, Node.js 20+, and npm. If a runtime is missing, show the relevant installation command or official download link and wait for the user to approve system-level installation. Use `python` on Windows or `python3` on macOS/Linux in the commands below.
+
 ## Workflow
 
 1. Inspect all supplied files. Label each as a brand reference, visual reference, logo asset, or proof asset. Never infer that a mood image is the brand itself.
 2. Scaffold a campaign:
 
    ```bash
-   python scripts/init_campaign.py \
+   <python-command> scripts/init_campaign.py \
      --dest /absolute/path/to/campaign \
      --brand-name "Your Brand" \
      --campaign-slug your-brand-campaign \
@@ -38,7 +42,7 @@ Read [references/intake-contract.md](references/intake-contract.md). Obtain or p
 3. Write `brand/brand.json` and `content/posts.json`. Follow [references/content-architecture.md](references/content-architecture.md), keep claims source-safe, and validate:
 
    ```bash
-   python scripts/validate_manifest.py --campaign /absolute/path/to/campaign
+   <python-command> scripts/validate_manifest.py --campaign /absolute/path/to/campaign
    ```
 
 4. Read [references/image-generation.md](references/image-generation.md). Use the built-in image generation tool once per post. Generate a 4:5 text-free scene with negative space matching that post's anchor. Save it as `assets/backgrounds/NN-slug.png`.
@@ -60,7 +64,7 @@ Read [references/intake-contract.md](references/intake-contract.md). Obtain or p
 7. Package the final delivery:
 
    ```bash
-   python scripts/package_delivery.py \
+   <python-command> scripts/package_delivery.py \
      --campaign /absolute/path/to/campaign \
      --desktop-dir /absolute/path/to/delivery
    ```
