@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      - name: Check JavaScript syntax
+        run: |
+          node --check assets/campaign-template/scripts/normalize-backgrounds.mjs
+          node --check assets/campaign-template/scripts/record-visual-review.mjs
+          node --check assets/campaign-template/scripts/render-posts.mjs
+          node --check assets/campaign-template/scripts/run-python.mjs
+          node --check assets/campaign-template/scripts/verify-and-contact-sheet.mjs
+
+      - name: Run regression suite
+        run: python scripts/test_skill.py

@@ -1,0 +1,21 @@
+{
+  "name": "jett-social-media-campaign",
+  "version": "1.0.0",
+  "description": "Deterministic rendering engine for Jett Social Media campaigns",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/run-python.mjs scripts/validate_manifest.py --campaign .",
+    "normalize": "node scripts/normalize-backgrounds.mjs",
+    "render": "node scripts/render-posts.mjs",
+    "verify": "node scripts/verify-and-contact-sheet.mjs",
+    "build": "npm run validate && npm run normalize && npm run render && npm run verify"
+  },
+  "dependencies": {
+    "playwright": "1.62.0",
+    "sharp": "0.35.3"
+  }
+}

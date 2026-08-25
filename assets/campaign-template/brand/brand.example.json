@@ -1,0 +1,31 @@
+{
+  "brandName": "Your Brand",
+  "campaignSlug": "your-brand-launch",
+  "sector": "Replace with the user-provided sector",
+  "offer": "Replace with the user-provided offer",
+  "targetAudience": "Replace with the user-provided audience",
+  "campaignGoal": "awareness",
+  "language": "tr",
+  "colors": {
+    "background": "#101014",
+    "text": "#F4F2F6",
+    "accent": "#7452A8",
+    "status": "proposed"
+  },
+  "typography": {
+    "headline": "Avenir Next",
+    "body": "Avenir Next",
+    "status": "proposed"
+  },
+  "layoutMode": "balanced-orderly",
+  "output": {
+    "width": 1080,
+    "height": 1350
+  },
+  "logo": {
+    "enabled": false,
+    "file": "",
+    "anchor": "bottom-left",
+    "width": 160
+  }
+}

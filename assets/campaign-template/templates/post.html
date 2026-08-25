@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="{{LANG}}">
+<head>
+  <meta charset="utf-8">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 1080px; height: 1350px; margin: 0; overflow: hidden; }
+    body { font-family: {{BODY_FONT}}; color: {{TEXT_COLOR}}; background: {{BACKGROUND_COLOR}}; }
+    .post { position: relative; width: 1080px; height: 1350px; overflow: hidden; background: {{BACKGROUND_COLOR}}; }
+    .background { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .wash { position: absolute; inset: 0; background: {{WASH}}; }
+    .safe { position: absolute; inset: 80px 72px; display: flex; }
+    .copy { width: min(820px, 100%); display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+    .left-top { align-items: flex-start; justify-content: flex-start; }
+    .left-bottom { align-items: flex-end; justify-content: flex-start; }
+    .center-top { align-items: flex-start; justify-content: center; }
+    .center-top .copy, .center .copy, .center-bottom .copy { align-items: center; text-align: center; }
+    .center { align-items: center; justify-content: center; }
+    .center-bottom { align-items: flex-end; justify-content: center; }
+    .right-top { align-items: flex-start; justify-content: flex-end; }
+    .right-bottom { align-items: flex-end; justify-content: flex-end; }
+    .right-top .copy, .right-bottom .copy { align-items: flex-end; text-align: right; }
+    .rule { width: 64px; height: 4px; margin-bottom: 22px; background: {{ACCENT_COLOR}}; border-radius: 999px; }
+    .eyebrow { font-size: 22px; line-height: 1.2; letter-spacing: 7px; font-weight: 650; text-transform: uppercase; opacity: .82; margin-bottom: 24px; }
+    h1 { font-family: {{HEADLINE_FONT}}; margin: 0; letter-spacing: -0.048em; font-weight: 720; line-height: .96; text-wrap: balance; }
+    h1.display { font-size: 88px; }
+    h1.standard { font-size: 76px; }
+    h1.compact { font-size: 66px; }
+    h1 span { display: block; }
+    h1 .accent { color: {{ACCENT_COLOR}}; }
+    .subtext { max-width: 650px; margin-top: 30px; font-size: 25px; line-height: 1.45; letter-spacing: -.01em; opacity: .8; }
+    .index { position: absolute; top: 44px; right: 52px; font-size: 18px; letter-spacing: 5px; opacity: .55; }
+    .logo { position: absolute; {{LOGO_POSITION}} width: {{LOGO_WIDTH}}px; max-height: 100px; object-fit: contain; }
+  </style>
+</head>
+<body>
+  <main class="post">
+    <img class="background" src="{{BACKGROUND}}" alt="">
+    <div class="wash"></div>
+    <div class="index">{{INDEX}}</div>
+    <section class="safe {{ANCHOR}}">
+      <div class="copy">
+        <div class="rule"></div>
+        <div class="eyebrow">{{EYEBROW}}</div>
+        <h1 class="{{HEADLINE_SCALE}}">{{HEADLINE}}</h1>
+        <div class="subtext">{{SUBTEXT}}</div>
+      </div>
+    </section>
+    {{LOGO}}
+  </main>
+</body>
+</html>

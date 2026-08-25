@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="560" viewBox="0 0 1440 560" fill="none">
+  <defs>
+    <linearGradient id="surface" x1="80" y1="0" x2="1360" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#121822"/>
+      <stop offset="1" stop-color="#090C12"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#98F5D1"/>
+      <stop offset="1" stop-color="#55B9F3"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#252F3B"/>
+      <stop offset="1" stop-color="#141A23"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1068 230) rotate(90) scale(306 430)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#98F5D1" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#98F5D1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1440" height="560" rx="30" fill="url(#surface)"/>
+  <rect width="1440" height="560" rx="30" fill="url(#glow)"/>
+  <rect x="1" y="1" width="1438" height="558" rx="29" stroke="#FFFFFF" stroke-opacity=".09"/>
+
+  <g transform="translate(92 104)">
+    <rect width="44" height="44" rx="14" fill="url(#mint)"/>
+    <path d="M15 14H29V18H23V27C23 32 20 35 15 35V30C17 30 18 29 18 26V18H15V14Z" fill="#101720"/>
+    <text x="60" y="30" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" letter-spacing="2.8">JETT</text>
+    <text x="0" y="142" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="700" letter-spacing="-3.5">Social media,</text>
+    <text x="0" y="218" fill="url(#mint)" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="700" letter-spacing="-3.5">made coherent.</text>
+    <text x="2" y="276" fill="#A7B0BE" font-family="Arial, Helvetica, sans-serif" font-size="19">Twelve campaign-ready posts. One unmistakable brand.</text>
+
+    <rect x="0" y="322" width="142" height="36" rx="18" fill="#FFFFFF" fill-opacity=".07" stroke="#FFFFFF" stroke-opacity=".10"/>
+    <circle cx="19" cy="340" r="4" fill="#98F5D1"/>
+    <text x="32" y="346" fill="#D9E2EC" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing=".4">CODEX SKILL</text>
+
+    <rect x="154" y="322" width="136" height="36" rx="18" fill="#FFFFFF" fill-opacity=".07" stroke="#FFFFFF" stroke-opacity=".10"/>
+    <text x="172" y="346" fill="#D9E2EC" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing=".4">12 × 4:5 POSTS</text>
+  </g>
+
+  <g transform="translate(866 72)">
+    <rect x="0" y="0" width="128" height="96" rx="12" fill="url(#tile)"/>
+    <rect x="140" y="0" width="128" height="96" rx="12" fill="#20363A"/>
+    <rect x="280" y="0" width="128" height="96" rx="12" fill="url(#tile)"/>
+    <rect x="0" y="108" width="128" height="96" rx="12" fill="#222B38"/>
+    <rect x="140" y="108" width="128" height="96" rx="12" fill="#1F3436"/>
+    <rect x="280" y="108" width="128" height="96" rx="12" fill="#263040"/>
+    <rect x="0" y="216" width="128" height="96" rx="12" fill="#25323D"/>
+    <rect x="140" y="216" width="128" height="96" rx="12" fill="#202A37"/>
+    <rect x="280" y="216" width="128" height="96" rx="12" fill="#203638"/>
+    <rect x="0" y="324" width="128" height="96" rx="12" fill="#203335"/>
+    <rect x="140" y="324" width="128" height="96" rx="12" fill="#242D3B"/>
+    <rect x="280" y="324" width="128" height="96" rx="12" fill="url(#mint)"/>
+
+    <g fill="#F8FAFC" fill-opacity=".86">
+      <rect x="14" y="18" width="58" height="6" rx="3"/><rect x="14" y="30" width="39" height="5" rx="2.5"/>
+      <rect x="174" y="18" width="58" height="6" rx="3"/><rect x="185" y="30" width="37" height="5" rx="2.5"/>
+      <rect x="334" y="18" width="58" height="6" rx="3"/><rect x="352" y="30" width="40" height="5" rx="2.5"/>
+      <rect x="14" y="178" width="61" height="6" rx="3"/><rect x="14" y="190" width="42" height="5" rx="2.5"/>
+      <rect x="175" y="149" width="58" height="6" rx="3"/><rect x="184" y="161" width="41" height="5" rx="2.5"/>
+      <rect x="331" y="178" width="62" height="6" rx="3"/><rect x="347" y="190" width="46" height="5" rx="2.5"/>
+      <rect x="14" y="234" width="58" height="6" rx="3"/><rect x="14" y="246" width="44" height="5" rx="2.5"/>
+      <rect x="174" y="288" width="59" height="6" rx="3"/><rect x="183" y="300" width="41" height="5" rx="2.5"/>
+      <rect x="336" y="234" width="56" height="6" rx="3"/><rect x="352" y="246" width="40" height="5" rx="2.5"/>
+      <rect x="14" y="395" width="57" height="6" rx="3"/><rect x="14" y="407" width="40" height="5" rx="2.5"/>
+      <rect x="176" y="342" width="57" height="6" rx="3"/><rect x="186" y="354" width="38" height="5" rx="2.5"/>
+    </g>
+    <g fill="#101720">
+      <rect x="316" y="371" width="54" height="7" rx="3.5"/>
+      <rect x="323" y="385" width="40" height="5" rx="2.5"/>
+    </g>
+  </g>
+</svg>

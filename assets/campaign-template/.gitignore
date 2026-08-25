@@ -1,0 +1,16 @@
+node_modules/
+.DS_Store
+._*
+Thumbs.db
+.env
+.env.*
+!.env.example
+outputs/posts/*.png
+outputs/preview/*.png
+outputs/preview/*.json
+outputs/render-report.json
+outputs/visual-review.json
+assets/backgrounds/*.png
+!assets/backgrounds/.gitkeep
+!outputs/posts/.gitkeep
+!outputs/preview/.gitkeep

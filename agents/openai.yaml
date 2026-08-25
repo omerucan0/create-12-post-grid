@@ -1,0 +1,4 @@
+interface:
+  display_name: "Jett Social Media"
+  short_description: "Create premium 12-post Instagram campaigns"
+  default_prompt: "Use $jett-social-media to turn my brand details into a complete 12-post Instagram campaign."
